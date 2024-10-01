@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0:#ECF3F4;
+    --cor1:#C9EBF1;
+    --cor2:#8DDDEB;
+    --cor3:#09C2E3;
+    --cor4:#51A0E5;
+    --cor5:#097DE3;
+    --cor6:#095BE3;
+    --cor7:#0938E3;
+}
+
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* altura do main para ter espaço para o footer */
+    background-color: var(--cor0);
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-circle {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 6px solid var(--cor0);
+    border-top: 6px solid var(--cor4);
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite; /*tempo que demora a dar a volta*/
+}
+
+.logo {
+    width: 450px; /* Ajustar tamanho do logo */
+    height:  450px;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*quero fazer animação da wave e algo em cima?
+quero saber o que vai ter escrito dentro da wave*/
