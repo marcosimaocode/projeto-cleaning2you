@@ -18,8 +18,7 @@
 
 body, html {
     background-color: var(--cor0);
-    background: url(../imagens/login-background\ 1.0.1.png); /*colocar a wave no background*/
-    background-repeat: no-repeat;
+    
     width: 100vw;
     height: 100vh;
 
